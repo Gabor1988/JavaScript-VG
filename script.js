@@ -4,6 +4,13 @@ console.log(name + "'s apples");
 
 console.log('Hello World!');
 
+//Vmi kiválasztása / action utána
+//$('selector').action()
+
+// H1 kiválasztása
+$('h1').text('We are having a break!');
+
+
 //This a JavaScript comment
 
 /*
