@@ -13,9 +13,10 @@ $('h1').text('We are having a break!');
 
 //$('p').text('Megváltoztatom a paragraph értékét erre a szövegre')
 
-//text action-el kiírná a spam-t / HTML-el kódnak veszi és nem írj ki. Hanem lefordítja
+//text action-el kiírná a spam-t vagy a strong-ot / HTML-el kódnak veszi és nem írj ki. Hanem lefordítja
 $('p').html('Megváltoztatom a paragraph értékét erre a szövegre. Like:<strong>13</strong>');
 
+//a CSS stílus módosítása.
 $('strong').css('background', 'lime');
 $('strong').css('padding', '10px');
 
@@ -48,14 +49,18 @@ $('#add-button').click(() => {
     }
 });
 
-/*új változó a létrehozásra és a buttonnál a click-be ezt adjuk meg...
-
+/*új változó a létrehozásra és a buttonnál a click-be ezt adjuk meg.
 let addButtonHandler = () => {
     $('ul').append('<li>My name is '+ name +'</li>');
 };
 
 $('#add-button').click(addButtonHandler);
+*/
 
+/*FUNCTION???
+function addButtonHandler() {
+    $('ul').append('<li>My name is '+ name +'</li>');
+};
 */
 
 //Remove button, eltávolít valamit a listából
@@ -90,11 +95,49 @@ if(age < 18){
 
 console.log('This is after the if');
 
-/* Szöveg összehasonlítás
+// Szöveg összehasonlítás
+//if('hello' === 'hello')
 
-if('hello' === 'hello')
-*/
+//LOOP
+let colors = ['orange', 'lime', 'magenta', 'yellow', 'blue'];
 
+//FONTOS: :last-child az jelenti utolsó elem!
+
+/* Egyesével így lehetne felvenni!*/
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[0]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[1]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[2]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[3]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[4]);
+
+//.push --> ezzel teszi bele a tömbbe (Array) az új elemet.
+colors.push('purple');
+
+//forEach ciklus!
+colors.forEach((color) => {
+    $('#box-container').append('<div class="box"></div>');
+    $('.box:last-child').css('background', color);
+});
+
+/*
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}*/
+
+//FOR ciklus!
+for (let i = 0; i < 100; i = i + 1) {
+    console.log(i);
+}
+
+for (let i = 0; i < colors.length; i = i + 1) {
+    console.log(colors[i]);
+}
 
 //This a JavaScript comment
 

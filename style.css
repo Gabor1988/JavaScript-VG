@@ -13,6 +13,13 @@ a{
     color: black;
 }
 
+/*Ez nem tudom mi volt...*/
 .blue{
     background: blue;
+}
+
+/*a script-ben lévő box div stílusa!!!*/
+.box{
+    height: 100px;
+    width: 100px;
 }
