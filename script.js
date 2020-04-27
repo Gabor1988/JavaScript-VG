@@ -5,6 +5,12 @@ console.log(name + "'s apples");
 
 console.log('Hello World!');
 
+/* Név kiíratása más módszerrel, a vessző is más (ALT GR + 7)
+let name = 'Mark';
+let greeting = `Hello ${name}!`;
+// greeting equals to "Hello Mark!"
+*/
+
 //Vmi kiválasztása / action utána
 //$('selector').action()
 
@@ -13,7 +19,7 @@ $('h1').text('We are having a break!');
 
 //$('p').text('Megváltoztatom a paragraph értékét erre a szövegre')
 
-//text action-el kiírná a spam-t vagy a strong-ot / HTML-el kódnak veszi és nem írj ki. Hanem lefordítja
+//text action-el kiírná a spam-t vagy a strong-ot / HTML-el kódnak veszi és nem írj ki. Hanem lefordítja 
 $('p').html('Megváltoztatom a paragraph értékét erre a szövegre. Like:<strong>13</strong>');
 
 //a CSS stílus módosítása.
@@ -138,6 +144,22 @@ for (let i = 0; i < 100; i = i + 1) {
 for (let i = 0; i < colors.length; i = i + 1) {
     console.log(colors[i]);
 }
+
+//Object - Objektumok
+/*let post = {
+    author: "Bill Gates",
+    content: "Online communication will change how companies work",
+    date: "2020-04-01 18:06",
+  };
+  
+  // You can access the values by their names, two syntaxes can be used
+  console.log(post['author']); // prints "Bill Gates"
+  console.log(post.author);    // prints "Bill Gates"
+  
+  // Objects are dynamic and you can add new boxes anytime
+  post.likes = 11043;
+  console.log(post.likes); // prints 11043
+*/
 
 //This a JavaScript comment
 
